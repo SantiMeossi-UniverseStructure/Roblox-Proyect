@@ -102,5 +102,5 @@ local function processPurchase(receiptInfo)
 end
 
 MarketplaceService.ProcessReceipt = processPurchase
-----------------------------------------------------------Pone si compró o no al final, si lo compró le da lo que pago, si no,
-----------------------------------------------------------el resto lo hace el local script.
+----------------------------------------------------------Pone si comprÃ³ o no al final, si lo comprÃ³ le da lo que pago, si no,
+----------------------------------------------------------el resto lo hace el local script. 
