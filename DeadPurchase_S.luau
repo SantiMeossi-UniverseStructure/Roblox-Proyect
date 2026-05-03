@@ -103,4 +103,4 @@ end
 
 MarketplaceService.ProcessReceipt = processPurchase
 ----------------------------------------------------------Pone si compró o no al final, si lo compró le da lo que pago, si no,
-----------------------------------------------------------el resto lo hace el local script. 
+----------------------------------------------------------el resto lo hace el local script.
