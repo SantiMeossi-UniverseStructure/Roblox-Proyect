@@ -1,4 +1,4 @@
---Tiene todos los desafíos del piso 1.
+--Tiene todos los desafÃ­os del piso 1.
 
 local challenges = {}
 ---------------------------------------------------------------------------------Scripts locales
@@ -50,7 +50,7 @@ for i, laser in pairs(lasers:GetChildren()) do
 			cooldownPlayers[player.Name] = false
 		end
 	end)
-end--En este for estan las funciones de daño.
+end--En este for estan las funciones de daÃ±o.
 
 function challenges.f1c1()
 	cooldownPlayers = {}
@@ -130,10 +130,10 @@ function challenges.f1c1()
 		lasers:WaitForChild("Laser" .. number).CanTouch = false
 		lasers:WaitForChild("Laser" .. number).CanCollide = false
 	end
-end--estos son los lasers, son tweeen service y funciones que hacen que se muevan y hagan daño.
+end--estos son los lasers, son tweeen service y funciones que hacen que se muevan y hagan daÃ±o.
 --------------------------------------------------------------------------------------------
 
--------------------------------------------------------------------------Químicos
+-------------------------------------------------------------------------QuÃ­micos
 local quadrants = floor:WaitForChild("Chemicals")
 
 function challenges.f1c2()
@@ -173,7 +173,7 @@ function challenges.f1c2()
 			end
 			task.wait(0.25)
 		end
-	end--Es la funcion del daño, le mandas el cuadrante y detecta si los jugadores que y les quita vida.
+	end--Es la funcion del daÃ±o, le mandas el cuadrante y detecta si los jugadores que y les quita vida.
 	------------------------
 	local function visible(first, second, third)
 		local list = {first, second, third}
@@ -308,7 +308,7 @@ function challenges.f1c2()
 	quadrantsFunction(1)
 	quadrantsFunction(2)
 	quadrantsFunction(3)
-end--es la funcion de los cuadrantes que selecciona allgunos y los sube, ademas del daño.
+end--es la funcion de los cuadrantes que selecciona allgunos y los sube, ademas del daÃ±o.
 
 -----------------------------
 local floorR = floor:WaitForChild("MainModel"):WaitForChild("Floor")
@@ -332,7 +332,7 @@ local function collitions()
 		end
 	end
 end
-collitions()-----Esta función es de las zonas d muerte que te quitan el VectorForce.
+collitions()-----Esta funciÃ³n es de las zonas d muerte que te quitan el VectorForce.
 
 acid.Touched:Connect(function(part)
 	local character = part.Parent
@@ -347,7 +347,7 @@ acid.Touched:Connect(function(part)
 		local player = Players:GetPlayerFromCharacter(character)
 		SoundEvent:FireClient(player, "WindOff")
 	end
-end)------Este es que te mate el ácido.
+end)------Este es que te mate el Ã¡cido.
 
 
 
@@ -409,7 +409,7 @@ function challenges.f1c3()
 				end
 			end
 		end
-	end--Esta función se usa para encender los ventiladores y la fuerza.
+	end--Esta funciÃ³n se usa para encender los ventiladores y la fuerza.
 	
 	local function fansOff(quitJump)
 		forceX = 0
@@ -431,9 +431,9 @@ function challenges.f1c3()
 				end
 			end
 		end
-	end---------Esta función le quita la fuerza a todos los jugadores.
+	end---------Esta funciÃ³n le quita la fuerza a todos los jugadores.
 	
-	local playersConnections = {}--En este array están todas las conexiones de los jugadores para que al revivir se les de la fuerza.
+	local playersConnections = {}--En este array estÃ¡n todas las conexiones de los jugadores para que al revivir se les de la fuerza. 
 
 	for i, player in ipairs(playersInGame) do
 		if player:GetAttribute("inGame") == true then
@@ -452,7 +452,7 @@ function challenges.f1c3()
 			end)-----------------------------------------------------------
 			table.insert(playersConnections, connection)
 		end
-	end--Esta función guarda en el array las conexiones de los jugadores.
+	end--Esta funciÃ³n guarda en el array las conexiones de los jugadores.
 	
 	local function endChallenge()
 		local info = TweenInfo.new(3, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut)
