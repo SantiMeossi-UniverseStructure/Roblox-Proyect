@@ -131,4 +131,4 @@ local function completePurchase(userId, productId, isPurchased)
 end
 
 MarketplaceService.PromptProductPurchaseFinished:Connect(completePurchase)
--------------------------------------------------------------------------esto es una vez hecha la compra.
+-------------------------------------------------------------------------esto es una vez hecha la compra. 
